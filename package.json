@@ -1,0 +1,14 @@
+{
+  "name": "content-agent-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "pull-data": "node scripts/pull-instagram-data.js",
+    "send-digest": "node scripts/send-telegram-digest.js"
+  },
+  "dependencies": {
+    "apify-client": "^2.9.5",
+    "dotenv": "^16.4.5"
+  }
+}
