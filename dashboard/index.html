@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Content Agent Dashboard</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="title-block">
+      <h1>Content Agent Dashboard</h1>
+      <div class="subtitle" id="handle-line">@kamil.ozornek.dubai · Dubai real estate</div>
+    </div>
+    <div class="meta">
+      <div class="badge"><span class="dot"></span> Live</div>
+      <div id="updated-line">Loading…</div>
+    </div>
+  </header>
+
+  <section class="stats" id="stats">
+    <div class="stat-tile">
+      <div class="label">Followers</div>
+      <div class="value" id="stat-followers">—</div>
+    </div>
+    <div class="stat-tile">
+      <div class="label">All-time top post</div>
+      <div class="value" id="stat-top-post">—</div>
+      <div class="sub" id="stat-top-post-sub">views</div>
+    </div>
+    <div class="stat-tile">
+      <div class="label">Total views (scraped posts)</div>
+      <div class="value" id="stat-total-views">—</div>
+    </div>
+    <div class="stat-tile">
+      <div class="label">Avg engagement rate</div>
+      <div class="value" id="stat-engagement">—</div>
+    </div>
+  </section>
+
+  <h2 class="section-title">Your 5 agents</h2>
+  <section class="agents" id="agents"></section>
+
+</div>
+
+<div class="overlay" id="overlay">
+  <div class="panel">
+    <header>
+      <h3 id="panel-title">Agent</h3>
+      <button class="close-btn" id="panel-close">✕</button>
+    </header>
+    <div id="panel-body"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
